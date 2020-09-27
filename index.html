@@ -1,286 +1,437 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>这是我们的开始</title>
-<script type="text/javascript" src="js/mapper.js"></script>
-<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js">
-</script> 
-<link href="css/mycss.css" type="text/css" rel="stylesheet">
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
+  <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+  <![endif]-->
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <title>Karma大标题风格响应式个人博客网站html模板 - 我爱模板网 www.5imoban.net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="templatemo">
+    <meta charset="UTF-8">
+
+    <!-- CSS Bootstrap & Custom -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">  
+    <link href="slider/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+
+    <!-- Modernizr -->
+    <script src="slider/modernizr.js"></script>
+    <!-- HTML 5 shim for IE backwards compatibility -->
+  <!-- [if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
 </head>
+<body>
 
-<body class="main">
-	<section class="header">
-		<div class="container"><!--头部栏-->
-			<div class="search">
-			<form action="" class="search_parent"><!--搜索框-->
-				<input type="text" placeholder="" value="" class="search_input">
-				<input type="submit" value="" class="search_btn">
-			</form>
-			</div>
-			<div class="nav"><!--导航栏-->
-			<ul>
-				<li  id="usericon"><img id="user_icon" src="pic/usericon.jpg" alt="头像"></li><!--头像-->
-				<li id="menu_item1" class="login"><a href="link/login.html">登出</a></li>
-				<li id="menu_item2" class="about"><a href="link/about.html">关于</a></li>
-			</ul>
-			</div>
-		</div>
-	</section>
-	<section 
-	<section class="chart">
-		<div class="content_wrap">
-			<div class="page" id="page1">
-				<div  class="flag" id="flag1"><h2>这是一个开始</h2><hr class="div_line"></div>
-			</div>
-			<div class="page" id="page2">
-				<div id="mainimg">
-					<img id="img1" src="pic/map.png" alt="蹭饭图" usemap="#bmeal_map" class="mapper bmeal_img">
-					  <script type="text/javascript">
-								function showList(x){
-									var name_list_img = document.getElementById("list_img");
-									var url = "pic/name_list_"+x+".png";
-									name_list_img.src=url;
-								}
-							</script>
-						<map name="bmeal_map">
-					  <area shape="poly" coords="482,208,487,209,493,208,494,212,495,217,501,220,504,218,506,214,510,210,513,210,517,212,523,211,529,212,530,214,525,218,522,219,518,224,516,227,513,229,510,229,510,231,510,233,510,234,508,237,507,238,506,239,505,242,504,244,503,246,500,248,498,249,495,253,492,254,486,258,480,253,474,254,468,257,462,255,458,253,461,250,463,245,462,240,460,237,459,234,462,230,465,227,466,224,469,220,473,216,476,212"  alt="山东省" title="山东省" class="noborder icolor99cccc" onMouseMove="showList('sd')">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">    
+    <div class="container">
+      <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><img src="images/templatemo_logo.png" alt="karma"></a>
+          </div>
+        </div>        
+        
+        <div class="col-md-10 col-sm-10 col-xs-12">
+          <div class="navbar-collapse collapse menu">          
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#about"><i class="fa fa-user"></i>About Us</a></li>
+              <li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
+              <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+              <li><a href="#blog"><i class="fa fa-pencil"></i>Blog</a></li>
+              <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.row -->
+    </div>
+  </nav>
 
-					  <area shape="poly" coords="484,16,490,13,498,10,507,12,514,14,521,19,527,24,529,29,532,35,536,40,539,44,540,50,548,51,554,52,562,53,568,54,571,60,573,65,579,66,586,64,592,59,597,54,602,51,603,57,603,62,604,68,605,74,604,79,605,85,604,90,602,95,596,97,590,98,590,104,592,109,591,115,593,120,588,121,584,117,578,117,574,121,569,120,565,117,564,113,561,115,558,117,553,114,549,110,544,110,537,110,529,110,525,110,522,106,516,104,512,101,513,97,514,94,512,92,508,92,505,89,507,85,509,80,513,77,516,73,520,74,520,71,520,66,522,63,523,60,523,56,522,54,522,50,524,46,524,42,525,38,523,35,519,34,516,32,513,34,509,35,504,37,499,36,496,32,495,27,491,27,486,28,485,23,484,19"  alt="黑龙江省" title="黑龙江省" class="noborder icolor99cccc" onMouseMove="showList('heb')">
-					  <area shape="poly" coords="514,102,519,104,524,108,529,110,536,110,543,110,549,110,553,114,556,116,559,115,563,114,565,115,567,119,572,121,575,120,578,117,584,117,587,120,590,121,594,120,593,124,590,128,587,130,583,129,583,132,581,136,576,138,576,143,571,144,572,148,570,152,566,153,561,152,557,152,556,157,553,159,552,157,547,154,547,150,548,148,545,145,542,144,542,141,541,138,539,136,535,137,533,137,528,134,524,136,522,132,520,126,518,123,515,124,512,127,510,124,508,120,508,115,506,111,505,106,511,105"  alt="吉林省" class="noborder icolor99cccc" onMouseMove="showList('cc')" title="吉林省">
-					  <area shape="poly" coords="206,235,201,235,196,232,191,230,186,229,179,230,174,233,171,232,169,233,166,234,161,236,158,236,152,236,149,236,146,233,141,231,136,229,131,227,127,229,124,230,118,229,116,227,111,226,109,227,105,231,103,233,102,234,99,234,95,233,93,233,89,232,88,230,86,228,87,225,87,223,86,221,83,218,78,214,76,214,75,211,74,210,72,207,71,205,71,203,70,199,68,196,65,194,61,193,60,192,61,191,64,187,66,180,66,177,65,175,64,174,63,173,59,170,59,168,60,165,66,158,67,157,70,155,74,154,77,153,82,155,85,156,87,156,88,156,90,155,92,154,94,152,95,152,101,153,104,153,108,152,109,151,109,150,112,149,117,147,120,147,122,147,124,146,124,146,126,145,127,142,128,141,128,140,129,139,131,138,133,137,133,136,135,134,136,129,136,127,136,125,136,123,136,121,136,118,137,117,134,111,134,111,138,111,141,111,144,111,146,111,149,111,152,113,154,113,155,112,156,111,156,109,156,108,158,105,159,103,161,101,163,97,164,95,165,94,166,93,172,93,174,95,177,96,178,96,179,96,187,96,187,96,189,93,189,90,189,89,191,86,192,85,193,84,198,83,199,83,200,81,200,80,201,78,202,77,203,76,206,75,207,75,208,75,210,76,211,78,213,82,214,84,216,86,220,88,223,90,226,91,227,91,228,96,230,98,230,99,232,105,233,107,234,108,234,110,233,113,231,116,229,118,229,119,231,122,236,126,239,127,243,129,244,130,247,130,249,130,253,131,257,133,259,135,260,137,263,140,264,140,266,140,268,143,270,147,273,149,273,151,274,152,275,155,276,158,276,160,275,163,274,166,273,167,269,169,266,169,264,170,260,171,259,172,255,176,252,177,251,177,249,179,250,183,249,186,248,189,248,191,247,195,247,198,247,200,244,201,239,202,236,203,229,203,227,203,225,203,219,205,215,208,213,211,215,216,220,224,220,225,217,228,215,229,217,232,217,233,217,234,214,237,213,237,209,237"  alt="新疆" class="noborder icolor99cccc" onMouseMove="showList('default')" title="新疆维吾尔族自治区">
-					  <area shape="poly" coords="524,137,522,141,516,144,513,145,510,147,508,151,504,153,502,155,499,157,498,158,496,157,494,156,493,155,488,154,489,156,490,163,490,166,489,173,489,174,492,175,495,178,497,179,499,181,500,180,504,177,506,175,508,173,509,171,512,170,514,170,516,170,518,173,518,175,518,177,516,180,515,185,516,187,517,188,516,192,515,195,518,194,521,191,523,189,523,187,524,185,527,183,529,183,530,182,532,179,533,179,535,178,537,178,539,177,541,176,543,175,545,173,545,172,546,170,547,169,548,168,549,167,550,165,551,164,553,161,553,159,551,158,549,157,548,155,548,154,548,152,548,150,548,149,547,147,544,145,543,144,542,143,542,141,542,140,541,137,541,137,534,137,532,137,531,136,530,136"  alt="辽宁" title="辽宁省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="483,16,484,21,484,24,485,26,485,27,488,29,490,28,492,27,494,27,495,29,496,33,498,34,499,36,504,37,508,36,510,35,513,35,515,32,517,32,518,33,521,35,522,36,524,37,523,41,524,43,524,46,522,48,522,50,523,52,524,55,524,57,524,59,523,61,522,63,521,63,520,66,521,68,521,70,521,71,520,73,519,73,517,73,515,74,514,75,513,76,511,77,509,80,509,83,508,85,507,86,505,89,507,91,508,92,512,94,513,94,513,96,512,98,512,99,512,101,512,104,512,104,509,106,507,106,505,106,505,108,505,109,506,111,507,113,507,116,508,117,508,119,509,121,509,125,511,127,513,126,515,126,517,125,519,125,520,126,521,128,521,130,522,132,523,134,524,136,524,138,522,141,521,141,519,142,515,144,513,145,511,146,508,149,506,150,503,152,500,156,497,156,495,156,494,154,492,153,490,153,488,156,488,159,489,162,491,166,491,167,482,167,481,165,481,164,480,162,478,158,476,156,470,156,468,159,466,161,465,163,464,164,460,164,458,167,458,168,453,169,450,166,448,163,445,163,443,165,441,171,441,174,442,178,443,180,441,184,439,185,437,188,431,189,429,189,427,191,425,193,424,195,422,198,418,199,415,198,411,198,409,200,407,203,405,206,403,210,402,213,401,214,400,216,399,219,398,222,391,223,386,222,384,222,381,221,379,220,376,214,377,213,378,212,378,209,377,207,377,206,373,205,371,205,370,206,368,209,368,213,368,215,367,219,366,222,361,225,359,225,356,226,353,227,353,227,350,225,348,223,347,222,344,220,344,215,345,214,349,208,350,205,350,204,347,202,345,201,343,202,340,205,339,206,335,206,333,205,332,205,329,207,328,208,326,209,320,207,316,203,315,202,314,201,313,200,309,197,309,196,310,194,312,190,312,189,311,183,307,183,305,183,304,185,302,185,299,185,299,186,298,189,295,187,293,185,292,183,291,182,290,180,290,177,290,174,289,172,288,169,287,168,286,166,286,164,286,162,285,159,291,161,294,161,296,162,300,162,304,162,306,162,308,162,310,162,315,162,316,162,319,163,324,165,330,168,339,171,343,172,347,173,348,173,350,173,353,173,354,173,357,174,360,173,361,173,364,172,369,170,372,168,373,168,379,167,381,166,383,165,387,164,391,163,394,163,396,163,398,162,400,162,402,162,403,161,405,160,406,160,408,158,410,157,411,155,413,153,414,150,417,149,417,147,417,145,417,143,416,140,416,137,416,136,417,134,421,131,426,132,429,131,430,130,433,130,437,129,439,126,440,124,440,124,442,124,445,123,449,122,450,121,451,120,454,118,456,112,457,110,460,107,462,107,464,106,466,105,467,104,475,103,476,103,478,103,481,104,483,103,483,102,483,99,482,97,482,96,481,94,480,93,476,93,474,92,472,89,471,88,469,87,465,88,463,89,462,90,460,92,455,90,453,90,450,91,448,94,447,87,447,82,447,80,447,77,448,74,449,73,451,70,455,68,459,67,461,67,464,66,466,65,468,64,469,62,470,59,470,56,472,52,472,49,472,48,474,44,475,42,475,41,476,38,476,37,478,33,473,30,472,27,475,21,476,19,480,17"  alt="内蒙古" title="内蒙古自治区" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="469,193,466,192,465,189,464,192,462,193,460,194,459,194,458,193,458,192,458,190,459,188,460,187,460,185,460,184,461,182,462,181,465,178,467,175,468,175,469,176,470,178,472,179,474,179,474,180,474,184,474,187,475,189,475,189,473,190"  alt="北京" title="帝都" class="noborder icolor99cccc" onMouseMove="showList('bj')">
+  <div class="container" id="home">
+    <div class="row">
+      <div class="col col-md-12">        
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/templatemo_slide_1.jpg" alt="slide 1" />
+              <p class="flex-caption">Mauris quis sapien sed mauris gravida congue. Fusce convallis felis non lectus facilisis, vel consequat felis dictum.</p>
+            </li>
+            <li>
+              <img src="images/templatemo_slide_2.jpg" alt="slide 2" />
+              <p class="flex-caption">Proin porttitor urna et enim semper lobortis eu vitae diam. Fusce rutrum consequat dolor. Quisque ante leo, scelerisque nec faucibus.</p>
+            </li>
+            <li>
+              <img src="images/templatemo_slide_3.jpg" alt="slide 3" />
+              <p class="flex-caption">Quisque gravida ac nisl nec ultrices. Mauris tincidunt magna vitae feugiat tincidunt. Donec elit arcu, accumsan quis sagittis vitae, porttitor et velit.</p>
+            </li>
+          </ul>
+        </div>            
+      </div>
+    </div>
+  </div>
+  <section id="about">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-sm-12"><h1>About us</h1></div>
+          <div class="col col-md-7 col-sm-12 center-row" id="about_content">
+            <div class="row center">
+              <div class="col col-md-4 col-sm-12 templatemo_ceo">
+                <img src="images/templatemo_image_02.jpg" alt="Linda" class="center-block img-circle img-responsive">
+                <p>Linda, CEO</p>
+              </div>
+              <div class="col col-md-8 col-sm-12">
+              	<p>Karma is <a href="#">free HTML5 template</a> based on Bootstrap responsive framework. Feel free to use this layout for any website.</p>
+                <p>Vestibulum ac enim.Vestibulum at mollis justo, eu elementum nisi. Sed consequat odio eget nunc tristique venenatis. Nullam non eros molestie, tristique libero ut, lacinia diam.</p>
+                <p>Integer hendrerit nibh at aliquam tincidunt. Duis auctor congue arcu eget congue. Vestibulum tristique sollicitudin est, non porttitor est viverra quis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1>Our Team</h1></div>
+          <div class="col col-md-7 col-md-pull-5 col-sm-12 center-row" id="team_content">
+            <div class="row center">
+              <div class="col col-md-4 col-sm-4 col-xs-4">
+                <img src="images/templatemo_image_01.jpg" alt="Nancy" class="img-circle img-responsive">
+                <p>Nancy</p>
+                <p>Manager</p>
+              </div>
+              <div class="col col-md-4 col-sm-4 col-xs-4">
+                <img src="images/templatemo_image_03.jpg" alt="Mary" class="img-circle img-responsive">
+                <p>Mary</p>
+                <p>Designer</p>
+              </div>        
+              <div class="col col-md-4 col-sm-4 col-xs-4">
+                <img src="images/templatemo_image_04.jpg" alt="Helen" class="img-circle img-responsive">
+                <p>Helen</p>
+                <p>Artist</p>
+              </div>        
+            </div>        
+          </div>        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-sm-12 col-xs-12">
+            <h1>Services</h1>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-2">
+            <div class="services_buttons">
+              <ul id="services_tabs">
+                <li class="icon-button active" data-target="#pencil"><i class="fa fa-pencil" style="vertical-align: middle"></i></li>
+                <li class="icon-button" data-target="#cog"><i class="fa fa-cog"></i></li>            
+                <li class="icon-button" data-target="#signal"><i class="fa fa-signal"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-md-5 col-sm-10 col-xs-10 center-row" id="services_content">
+            <div class="arrow-left"></div>
+            <div class="arrow-box center-row">
+              <div class="tab-content center">              
+                <div class="tab-pane fade in active" id="pencil">
+                  	<h3>Web Design</h3>
+                  	<p>Donec vehicula lectus ac ultrices aliquam. Pellentesque aliquam erat justo, nec auctor sem vulputate vitae. Praesent varius neque in dolor cursus dictum. Donec dignissim nibh nec adipiscing vehicula.</p>
+               	  	<p><a href="#">Mobile website template</a> is ready to use for your website. Quisque euismod enim et dignissim dictum. Vivamus eu tortor pharetra, mollis orci eget, pulvinar nisl.</p>
+                </div>
+                <div class="tab-pane fade" id="cog">
+                	<h3>Online Marketing</h3>
+                  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor elit nec metus pellentesque posuere. Donec velit arcu, vehicula nec tellus eu.</p>
+                  	<p>Vestibulum ac enim.Vestibulum at mollis justo, eu elementum nisi. Sed consequat odio eget nunc tristique venenatis. Nullam non eros molestie, tristique libero ut, lacinia diam.</p>
+                </div>
+                <div class="tab-pane fade" id="signal">
+                	<h3>Social Media</h3>
+                  	<p>Quisque gravida ac nisl nec ultrices. Mauris tincidunt magna vitae feugiat tincidunt. Maecenas semper quis arcu in porta.</p>
+                  	<p>Download <a rel="nofollow" href="#">templates</a> for your websites. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean adipiscing quam sed neque dapibus, id convallis mauris eleifend. Quisque sit amet nisl a ante pulvinar sodales.</p>
+                </div>
+              </div>                                     
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1>Skills</h1></div>
+          <div class="col col-md-7 col-md-pull-5 col-sm-12">
+            <br>
+            <div class="progress vertical">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;width: 100%">
+                <div class="progress-label">
+                  <p>HTML</p> 
+                  <p>75%</p>
+                </div>
+              </div>
+            </div>
+            <div class="progress vertical">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="height: 55%;width: 100%">
+                <div class="progress-label">
+                  <p>WP</p> 
+                  <p>55%</p>
+                </div>
+              </div>
+            </div>
+            <div class="progress vertical">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="height: 65%;width: 100%">
+                <div class="progress-label">
+                  <p>jQuery</p> 
+                  <p>65%</p>
+                </div>
+              </div>
+            </div>
+            <div class="progress vertical">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 90%;width: 100%">
+                <div class="progress-label">
+                  <p>PHP</p> 
+                  <p>90%</p>
+                </div>
+              </div>
+            </div>
+            <div class="progress vertical">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 70%;width: 100%">
+                <div class="progress-label">
+                  <p>PS</p> 
+                  <p>70%</p>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">      
+          <div class="col col-md-5 col-sm-12"><h1>Portfolio</h1></div>
+          <div class="col col-md-7 col-sm-12" id="portfolio_content">
+            <div class="row">
+              <div class="col col-md-4 col-sm-4 col-xs-6">
+                <div class="portfolio-item">                  
+                  <div class="portfolio-thumb">
+                    <img src="images/templatemo_slide_3_sm.jpg" alt="portfolio image 1" class="img-responsive">
+                    <div class="overlay-p">
+                      <a href="#">
+                        <h2>First Title</h2>
+                        <p>Lorem ipsum dolor sit amet, adipiscing elit. Vivamus elit nec metus pellentesque.</p> 
+                      </a>
+                    </div>
+                  </div>                     
+                </div>      
+              </div>
+              <div class="col col-md-4 col-sm-4 col-xs-6">  
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">              
+                    <img src="images/templatemo_image_05_sm.jpg" alt="portfolio image 2" class="img-responsive">
+                    <div class="overlay-p">
+                      <a href="#">
+                        <h2>Title Two</h2>
+                        <p>Donec elit arcu, accumsan quis sagittis vitae, porttitor et velit.</p> 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-4 col-xs-6">
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">
+                    <img src="images/templatemo_slide_1_sm.jpg" alt="portfolio image 3" class="img-responsive">
+                    <div class="overlay-p">
+                      <a href="#">
+                        <h2>Third Title</h2>
+                        <p>Proin porttitor urna et enim semper lobortis eu vitae diam.</p> 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-4 col-xs-6">
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">
+                    <img src="images/templatemo_image_06_sm.jpg" alt="portfolio image 4" class="img-responsive">
+                    <div class="overlay-p">
+                      <a href="#">
+                        <h2>Title Four</h2>
+                        <p>Maecenas semper quis arcu in porta. Donec elit arcu, vitae, porttitor et velit.</p> 
+                      </a>
+                    </div>
+                  </div>                  
+                </div>      
+              </div>
+              <div class="col col-md-4 col-sm-4 col-xs-6">  
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">              
+                    <img src="images/templatemo_image_07_sm.jpg" alt="portfolio image 5" class="img-responsive">
+                    <div class="overlay-p">
+                      <a href="#">
+                        <h2>Fifth Title</h2>
+                        <p>Vivamus tempor elit nec metus pellentesque posuere.</p> 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-4 col-xs-6">
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">
+                    <img src="images/templatemo_slide_2_sm.jpg" alt="portfolio image 6" class="img-responsive">
+                    <div class="overlay-p">
+                      <a href="#">
+                        <h2>Title Six</h2>
+                        <p>Vestibulum ac enim.Vestibulum at mollis justo, eu elementum nisi.</p> 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            </div>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1>Blog</h1></div>
+          <div class="col col-md-7 col-md-pull-5 col-sm-12">
+            <div class="blog_posts_container">
+              <div class="blog_post">
+                <h2>22<br>October</h2>
+                <img src="images/templatemo_image_05.jpg" alt="Blog Post 1" class="img-responsive">
+              </div>    
+              <div class="blog_post">
+                <h2>23<br>October</h2>      
+                <img src="images/templatemo_image_06.jpg" alt="Blog Post 2" class="img-responsive">
+              </div>
+            </div>          
+          </div>              
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-sm-12"><h1>Contact</h1></div>
+          <div class="col col-md-7 col-sm-12 col-xs-12 center-row" id="contact_content">
+            <form role="form" action="#" method="post" class="center">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input name="fullname" type="text" class="form-control" id="input_name" placeholder="Name...">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input name="email" type="email" class="form-control" id="input_email" placeholder="Email...">
+                  </div>                
+                </div> 
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea name="message" rows="3" class="form-control" id="input_message" placeholder="Message..."></textarea><br>
+                    <button type="submit" class="btn btn-primary pull-right">SEND</button>
+                  </div>
+                </div>
+              </div> <!-- row -->
+            </form>          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="map">
+    <div class="outer_container">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-5 col-md-push-7 col-sm-12"><h1>Map</h1></div>
+          <div class="col col-md-7 col-md-pull-5 col-sm-12">
+            <div id="google_map">
+            </div>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">        
+      <div class="row">
+        <div class="col col-md-6 col-sm-6 col-xs-6 col-xxs">
+          <img src="images/templatemo_logo.png" alt="karma">
+          <div id="templatemo_copyright">
+            Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.5imoban.net/">我爱模板网</a>
+          </div>
+        </div>        
+        <div class="col col-md-6 col-sm-6 col-xs-6 col-xxs">
+          <div class="pull-right">
+            <div class="social_buttons">
+              <a href="#" rel="nofollow" class="icon-button facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" rel="nofollow" class="icon-button twitter"><i class="fa fa-twitter"></i></a>             
+              <a href="#" rel="nofollow" class="icon-button youtube"><i class="fa fa-youtube"></i></a>
+            </div>
+            <a href="#" id="go-top"><div class="back_to_top">Back To Top</div></a>
+          </div>            
+        </div>
+      </div> 
+    </div>
+  </footer>
 
-					  <area shape="poly" coords="473,183,473,185,474,188,472,190,470,192,470,195,470,196,471,198,471,200,471,201,473,204,474,204,477,205,481,204,481,200,482,196,482,191,481,190,480,190,480,184,475,183"  alt="天津" title="天津市" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="481,206,481,202,482,199,484,197,488,196,490,194,493,193,494,191,495,188,497,184,498,182,497,181,493,178,490,176,488,174,489,172,490,170,488,167,487,166,485,167,485,168,483,168,481,165,479,163,479,161,478,160,477,157,476,157,474,157,468,159,464,165,460,165,458,168,454,169,450,167,445,164,442,171,441,173,443,182,444,184,445,187,444,190,445,192,448,194,446,201,443,205,442,209,442,212,443,214,444,215,446,218,446,223,447,227,447,229,448,233,448,236,451,237,455,236,458,236,459,235,460,233,461,231,462,229,463,228,465,227,466,226,468,224,469,222,469,221,471,217,472,216,473,215,477,213,478,212"  alt="河北" class="noborder icolor99cccc" onMouseMove="showList('default')" title="河北省">
-					  <area shape="poly" coords="486,258,492,254,498,251,503,247,506,251,512,252,515,253,516,255,517,257,518,261,519,263,523,268,524,271,525,273,526,274,528,277,530,277,533,279,535,280,536,283,536,284,536,286,534,288,532,291,531,292,530,294,529,296,526,297,522,297,520,297,517,296,513,295,510,293,509,293,506,291,505,290,502,285,503,282,504,281,502,278,498,276,494,271,493,268,490,264,487,264,486,263"  alt="江苏省" title="江苏省" class="noborder icolor99cccc" onMouseMove="showList('nj')">
-					  <area shape="poly" coords="516,297,520,298,524,297,527,296,529,295,530,295,532,292,533,291,534,289,537,287,539,288,539,290,539,291,538,292,536,293,533,295,529,297,527,299,525,302,524,303,527,303,532,303,535,302,538,302,540,303,541,306,543,308,542,311,541,314,541,315,541,318,541,321,541,322,540,325,540,326,539,327,537,329,535,331,535,334,534,336,534,337,533,340,532,342,530,341,526,341,525,341,523,341,522,340,518,340,517,342,515,341,511,331,509,330,508,329,508,327,507,325,503,321,503,320,504,317,511,310,511,309,511,308,511,307,513,303,514,302,514,300"  alt="浙江省" title="浙江省" class="noborder icolor99cccc" onMouseMove="showList('hz')">
-					  <area shape="poly" coords="538,293,533,296,531,299,529,301,534,302,536,302,539,302,539,299,539,297"  alt="上海" title="上海市" class="noborder icolor99cccc" onMouseMove="showList('sh')">
-					  <area shape="poly" coords="509,330,511,333,511,338,514,342,517,342,519,340,523,340,525,341,528,342,532,341,532,344,530,346,528,348,528,352,527,354,526,356,525,357,526,361,526,363,524,365,522,366,521,366,521,369,520,371,518,371,517,373,517,377,515,378,513,378,509,382,509,385,507,388,505,389,503,392,501,393,499,390,499,388,497,385,495,383,494,382,493,382,492,381,490,378,486,378,485,378,485,374,485,372,490,364,490,361,490,359,491,355,493,349,495,347,495,346,500,340,502,339,504,338,505,337,506,334"  alt="福建省" title="福建省" class="noborder icolor99cccc" onMouseMove="showList('fj')">
-					  <area shape="poly" coords="451,379,452,376,454,375,459,376,465,376,468,375,471,375,470,380,469,384,474,383,476,381,481,380,483,379,486,379,488,379,498,385,499,390,500,393,498,398,492,402,490,404,487,405,483,405,479,406,477,408,476,409,473,409,470,411,469,413,467,412,465,410,463,409,463,409,461,410,462,413,462,416,456,420,450,423,448,423,436,426,433,427,433,427,426,430,426,431,427,435,427,438,427,441,425,443,422,442,421,440,419,436,419,432,420,428,420,427,427,420,428,420,430,417,434,413,435,411,437,409,438,402,439,400,440,398,441,396,442,393,442,391,441,388,441,385,442,383,443,381,447,379"  alt="广东省" title="广东省" class="noborder icolor99cccc" onMouseMove="showList('gz')">
-					  <area shape="poly" coords="547,363,551,365,552,368,552,371,552,374,552,376,552,379,551,384,550,387,550,389,549,393,548,395,548,402,546,405,540,399,538,396,537,395,536,392,535,388,537,385,537,383,539,380,539,379,539,377,540,376,541,373,541,372,542,370,543,367,543,365"  alt="台湾省" title="台湾省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="415,448,422,447,427,445,430,445,433,447,433,451,431,454,430,458,428,463,425,465,423,466,417,469,416,469,413,468,407,467,407,465,407,461,408,458,410,454,412,451"  alt="海南省" title="海南省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="424,368,424,368,421,368,420,373,418,372,416,371,413,372,410,374,401,380,396,380,396,382,392,382,388,381,383,383,379,386,377,388,374,388,371,387,369,386,368,386,366,386,362,387,359,388,355,391,372,397,374,398,376,401,375,403,373,405,370,406,373,411,376,411,376,411,381,415,382,415,381,418,382,422,384,424,385,426,387,427,391,428,396,428,399,427,401,427,403,426,406,426,408,426,412,427,414,427,420,426,425,421,426,420,428,418,432,414,434,412,436,409,437,407,437,405,437,400,440,396,441,393,441,392,441,384,441,383,439,385,435,385,433,379,433,378,433,376,431,368,426,372,425,374"  alt="广西省" title="广西省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="461,328,463,325,469,324,471,322,472,320,473,319,476,319,479,319,482,319,485,317,487,317,489,318,493,318,495,317,497,319,499,321,500,321,501,321,502,323,504,325,505,326,506,327,507,330,507,333,507,335,505,337,499,341,498,343,497,344,497,345,496,347,495,348,494,349,492,350,492,355,492,356,491,357,491,358,490,360,490,361,490,362,490,365,488,367,487,368,486,369,484,373,484,374,484,377,483,378,477,380,475,382,473,382,473,383,471,383,470,383,471,375,470,375,468,375,465,376,465,376,462,375,462,373,462,371,463,368,464,366,464,365,464,362,462,358,461,357,460,356,458,352,457,350,457,348,457,346,459,344,460,340,461,338,461,337,461,333,460,331"  alt="江西省" title="江西省" class="noborder icolor99cccc" onMouseMove="showList('nc')">
-					  <area shape="poly" coords="432,368,432,372,432,373,433,377,434,380,435,383,436,384,440,384,441,383,443,381,444,380,449,377,451,377,453,377,454,375,456,375,460,375,462,375,463,372,462,370,463,367,463,364,463,361,461,358,459,355,457,351,457,350,457,347,460,344,460,339,460,336,459,334,459,331,457,329,456,328,455,326,454,323,451,321,449,322,449,324,442,322,436,322,433,322,429,320,423,320,422,320,421,320,421,324,421,325,420,326,417,326,413,325,411,326,409,328,409,329,407,332,407,334,407,337,408,339,409,341,410,344,410,347,409,351,408,352,407,353,405,355,411,364,411,365,411,366,412,370,413,371,415,371,417,370,418,370,425,370,428,369"  alt="湖南省" title="湖南省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="474,257,477,257,482,260,483,264,486,265,490,265,491,265,492,267,493,269,493,272,494,273,496,275,498,276,500,277,501,278,503,279,503,282,501,284,501,285,503,288,504,289,505,290,506,291,508,292,510,293,512,294,513,296,513,298,512,300,512,301,511,304,511,305,510,307,509,310,509,311,507,313,505,316,503,318,501,319,496,318,494,318,493,317,490,317,488,317,486,317,484,317,479,319,478,317,478,314,478,311,477,309,477,306,476,305,475,303,472,301,471,300,470,298,471,295,472,294,474,292,474,291,475,287,475,286,474,284,467,284,465,281,464,278,464,276,465,274,467,269,468,268,468,267,469,266,472,268,477,268,478,267,477,265,475,263,473,260"  alt="安徽" title="安徽省" class="noborder icolor99cccc" onMouseMove="showList('ah')">
-					  <area shape="poly" coords="408,280,411,283,414,281,417,279,419,279,421,281,424,284,427,286,429,287,431,288,434,288,438,287,441,287,443,288,445,288,448,289,451,292,453,294,455,295,457,295,458,295,460,296,463,298,464,298,464,298,467,297,468,297,469,298,470,300,471,302,473,303,475,306,476,308,476,310,476,311,477,312,478,316,479,316,479,318,477,318,473,318,472,319,471,320,469,321,468,322,465,323,463,324,462,324,460,326,459,328,457,329,456,327,455,325,453,323,453,322,451,321,449,321,448,322,448,323,446,323,445,322,443,321,436,321,433,321,433,320,431,319,430,319,425,319,423,319,422,319,421,320,419,322,420,324,420,325,419,326,415,326,414,325,409,327,407,331,406,332,403,329,402,328,402,327,401,326,399,322,400,321,400,319,400,317,404,315,406,314,407,313,409,313,410,312,412,311,413,310,413,310,414,308,415,308,415,305,414,303,413,302,413,301,412,301,411,300,410,299,409,297,409,296,409,293,409,292,409,291,409,290,410,289,411,289,413,289,414,289,415,288"  alt="湖北" title="湖北省" class="noborder icolor99cccc" onMouseMove="showList('wh')">
-					  <area shape="poly" coords="354,390,358,388,361,387,363,386,366,386,369,387,372,388,374,388,376,387,378,386,380,384,383,383,385,381,386,381,391,381,393,382,396,381,399,380,401,379,403,378,405,378,407,377,409,375,410,373,411,372,411,369,411,365,412,362,412,359,410,357,408,358,406,358,406,352,408,352,409,350,409,347,408,344,407,341,406,340,405,340,402,342,402,343,400,341,399,338,399,335,395,335,394,336,390,335,389,332,384,338,382,340,378,341,377,338,374,340,373,341,367,342,367,343,370,344,372,347,374,349,372,350,364,351,363,351,362,354,361,355,357,356,353,356,350,357,347,361,347,364,352,365,355,367,354,372,354,374,354,378,356,382"  alt="贵州" title="贵州省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="293,420,299,423,301,425,303,429,305,430,306,430,310,429,313,428,314,428,316,432,316,432,317,433,320,433,324,432,324,432,325,428,324,424,324,422,324,420,325,418,326,418,330,417,335,416,336,417,338,418,341,418,343,416,344,416,348,418,350,419,353,418,354,416,355,416,355,416,360,411,361,411,365,410,367,410,371,406,373,405,374,404,375,402,374,399,366,397,364,396,363,396,360,395,358,394,356,392,356,391,356,389,355,381,354,376,354,374,355,372,352,366,350,365,348,365,350,357,351,356,355,356,360,355,362,355,363,354,364,351,365,349,364,348,361,348,359,349,355,346,354,344,351,341,349,341,347,345,346,346,343,350,343,352,342,353,340,356,338,356,337,358,337,360,338,363,338,365,336,368,332,369,328,369,326,369,324,368,323,365,323,363,323,361,319,360,317,359,316,355,316,352,316,350,313,348,307,346,307,344,307,342,307,341,298,341,296,340,295,339,293,338,292,338,290,339,287,341,286,343,286,346,288,348,288,352,291,354,291,355,292,359,292,361,292,364,291,367,290,371,286,377,285,378,278,384,277,387,276,390,276,393,283,397,285,397,286,398,286,400,286,402,286,405,288,406,290,407,294,407,295,409,296,410,294,413,294,417"  alt="云南" title="云南省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="280,285,280,282,281,279,281,278,282,276,283,275,287,278,291,281,293,281,295,281,299,279,301,280,304,283,307,285,309,287,311,287,313,287,316,285,317,284,318,283,320,283,323,283,326,283,329,282,331,281,333,278,330,277,330,276,331,272,333,272,335,272,337,272,337,274,340,277,343,279,345,280,349,280,350,280,352,282,354,286,355,288,357,289,359,289,364,289,366,287,367,287,370,287,372,287,377,288,381,288,383,289,386,292,388,292,390,294,395,294,399,294,401,294,405,296,407,296,410,298,413,299,414,301,415,303,416,305,416,306,414,309,413,309,409,312,408,313,406,314,403,315,401,316,399,318,398,323,400,327,401,328,403,328,405,330,406,332,406,334,407,337,407,339,406,341,404,340,402,340,401,341,400,340,399,338,399,337,399,336,398,334,397,334,396,335,392,336,390,335,389,333,388,332,387,336,387,336,385,338,384,339,375,338,372,339,368,340,368,341,369,343,372,345,375,347,374,349,371,350,368,350,364,350,364,348,363,347,360,346,359,348,358,348,354,344,353,341,352,339,349,342,346,344,345,347,343,350,342,353,341,354,340,355,338,356,337,360,337,362,337,365,337,367,335,368,331,369,325,369,324,368,323,365,323,363,322,361,321,360,316,352,316,351,316,348,315,348,311,348,309,347,307,345,307,344,307,342,300,341,297,340,296,338,295,335,294,327,294,325,294,324,294,321,294,318,294,317,293,309,293,306,293,305,292,304,291,302,289,300,289,299,288,295,288,294,287,293,286,291,285,290"  alt="四川" title="四川省" class="noborder icolor99cccc" onMouseMove="showList('sc')">
-					  <area shape="poly" coords="279,287,280,289,283,292,284,293,286,295,287,298,288,301,290,303,291,305,292,315,292,320,293,323,294,327,295,330,294,334,292,337,291,337,289,338,287,341,284,343,281,342,279,342,278,345,275,348,270,348,267,347,264,345,259,343,258,343,254,345,252,346,248,346,244,348,242,349,239,350,239,352,235,354,230,356,229,356,226,355,219,354,218,354,217,351,215,349,213,347,212,345,211,343,210,340,205,339,202,339,200,338,196,335,193,335,191,336,189,336,185,338,183,339,183,341,182,343,182,343,180,339,179,336,179,335,176,334,174,334,172,334,169,335,168,336,165,336,163,334,163,333,158,330,157,330,152,331,151,331,149,329,147,326,146,325,144,322,143,321,143,319,142,317,139,315,137,317,134,319,133,316,131,311,129,309,124,307,121,303,120,302,118,300,116,299,114,297,113,296,103,294,102,292,100,288,99,288,97,284,95,283,93,282,88,278,87,276,86,275,85,274,83,271,83,270,82,266,82,263,81,262,80,258,80,256,80,255,82,254,92,256,92,254,92,252,92,246,91,243,90,242,90,240,93,236,95,234,95,234,98,234,103,235,105,233,107,231,108,228,109,227,110,227,115,229,119,230,126,230,128,229,134,228,137,228,139,229,141,230,144,231,146,232,149,235,150,235,154,236,158,236,161,236,164,235,164,234,168,233,169,233,173,233,174,232,177,231,179,230,181,229,187,229,190,230,192,230,194,231,197,232,199,233,201,234,203,235,205,236,206,238,205,242,205,245,204,247,204,250,204,253,203,258,203,261,203,263,204,267,206,271,207,273,209,273,211,273,215,273,216,275,218,276,222,281,231,283,235,284,238,284,244,286,247,287,252,288,255,291,257,293,261,297,263,298,264,299,268,299,269,298,272,297,274,296,276,294"  alt="西藏" title="西藏自治区" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="277,290,278,284,278,281,278,278,279,276,281,276,286,279,288,281,290,281,293,281,296,281,299,280,302,282,305,285,307,286,310,288,312,288,315,287,317,285,324,286,329,286,332,284,332,281,328,279,324,278,320,276,318,275,318,273,321,272,324,270,325,266,327,263,327,262,330,260,332,257,336,252,337,249,337,245,336,242,334,239,333,238,327,230,326,229,318,227,316,224,315,223,313,222,311,220,308,216,305,213,300,214,298,212,295,210,293,209,292,208,286,210,282,211,276,211,275,211,271,211,268,208,267,208,263,208,258,208,249,204,247,204,243,205,240,205,238,206,235,206,232,206,230,206,227,206,221,205,217,208,215,211,214,213,220,222,220,225,220,226,218,228,216,228,215,231,217,235,217,236,214,237,210,237,208,236,208,241,208,244,205,248,204,253,203,257,203,260,204,263,206,266,207,269,208,271,211,273,217,273,222,280,225,282,230,282,237,282,240,283,243,284,248,286,251,287,255,289,257,290,261,296,264,297,267,298,270,298,273,297,274,296,275,294"  alt="青海" title="青海省" class="noborder icolor99cccc" onMouseMove="showList('default')">
+  <!-- JavaScripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jquery.singlePageNav.js"></script>
+  <script src="js/templatemo_custom.js"></script>
+  <script defer src="slider/jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
 
-					  <area shape="poly" coords="278,157,283,160,285,169,288,174,288,178,291,181,293,185,298,186,302,184,308,182,312,185,312,188,311,192,310,195,311,198,315,202,317,204,320,206,322,207,326,207,330,204,333,204,337,205,341,204,344,201,346,201,349,204,349,208,346,210,345,213,345,215,347,218,349,221,351,224,353,226,354,227,358,231,362,231,363,231,365,234,365,238,366,242,368,246,369,249,370,250,374,251,377,250,379,249,382,248,382,245,380,243,378,241,377,238,377,235,377,232,378,231,379,230,382,231,386,232,391,233,393,236,395,239,397,242,398,248,399,250,398,252,396,253,394,253,392,253,386,259,385,259,383,259,380,259,378,258,377,269,377,269,376,272,378,275,376,276,371,277,371,279,371,281,370,284,367,286,362,288,356,290,354,286,354,283,353,281,352,280,350,279,348,279,344,278,339,275,338,273,333,271,329,273,331,275,332,278,329,280,325,278,324,277,322,275,321,273,321,272,324,268,326,266,329,259,331,258,333,255,336,247,336,246,337,243,335,239,334,237,333,235,332,234,326,229,323,226,321,225,320,222,318,220,316,219,309,214,305,212,297,207,296,207,295,206,292,206,290,207,283,209,276,209,269,209,265,207,263,207,262,207,258,206,256,205,252,204,250,200,249,196,250,192,250,190,250,186,250,182,252,176,253,174,253,174,259,173,263,171,266,171,270,171,273,168,274,167,276,163,277,162"  alt="甘肃" title="甘肃省" class="noborder icolor99cccc" onMouseMove="showList('lz')">
-					  <area shape="poly" coords="371,206,375,206,378,208,377,211,376,213,377,218,381,220,385,222,385,226,383,230,382,231,379,231,378,232,377,236,378,240,380,242,382,245,382,248,379,250,376,251,375,252,369,248,369,245,368,243,368,240,367,239,365,237,364,234,357,229,358,227,361,226,363,226,368,225,369,222,369,220,369,216,370,214,370,212"  alt="宁夏" title="宁夏回族自治区" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="373,284,372,281,372,279,373,279,375,277,377,277,380,272,379,270,379,266,378,263,378,260,381,259,385,261,391,260,392,257,394,255,397,255,400,252,400,246,398,243,396,239,393,237,389,235,387,234,384,232,384,229,385,225,386,224,388,224,392,224,400,219,400,216,400,215,400,213,402,209,405,206,407,203,414,198,417,198,417,200,416,206,415,210,413,212,413,216,415,219,416,222,416,226,415,236,416,240,417,243,417,247,416,250,414,256,416,261,417,265,420,268,421,273,422,279,422,280,418,280,415,280,414,280,410,280,409,280,410,285,412,288,413,288,408,289,407,292,407,296,404,296,400,295,398,294,393,294,391,294,389,294,386,289,384,287,381,287,378,287"  alt="陕西" title="陕西省" class="noborder icolor99cccc" onMouseMove="showList('sx')">
-					  <area shape="poly" coords="418,200,418,204,418,207,416,213,415,215,415,222,417,224,416,228,414,232,415,237,417,241,417,247,415,252,415,258,418,263,421,262,429,260,433,259,434,257,436,254,450,246,448,242,447,240,447,237,447,233,448,228,449,224,445,218,442,215,441,211,442,207,444,203,450,198,448,197,446,195,445,192,445,189,446,186,443,184,439,186,437,189,436,190,433,190,430,190,430,190,425,196"  alt="山西" title="山西省" class="noborder icolor99cccc" onMouseMove="showList('default')">
-					  <area shape="poly" coords="418,263,424,261,428,259,430,258,432,255,442,250,444,249,445,248,446,245,447,242,449,238,456,236,460,238,463,240,463,243,461,248,461,253,461,257,468,258,472,256,476,256,477,256,478,258,477,261,478,264,479,268,477,268,473,268,467,272,467,274,464,277,465,280,466,281,468,282,469,283,472,284,475,286,475,288,473,291,471,294,470,295,465,297,464,297,461,297,458,295,455,295,453,293,452,290,452,289,448,288,444,289,442,289,439,289,434,289,432,288,428,286,427,285,424,283,424,282,424,278,424,276,424,274,422,271,421,270,420,269" alt="河南" title="河南省" class="noborder icolor99cccc" onMouseMove="showList('zz')">
-					  <area shape="poly" coords="467,415,471,413,475,414,476,418,475,419,473,420,471,421,469,421,467,420,466,419" alt="香港" title="香港特别行政区" class="noborder icolor99cccc" onMouseMove="showList('hk')">
-					  <area shape="poly" coords="515,443,520,457,526,452,538,456,537,448,542,444" alt="新加坡" title="新加坡" class="noborder icolor99cccc" onMouseMove="showList('sp')">
-					</map>
-				</div>
-				<div id="namelist">
-					<img id = "list_img" src="pic/name_list_default.png" alt="名字列表">
-				</div>
-			</div>
-			<div class="page" id="page3">
-				<div class="flag" id="flag2"><h2>这是另外一个开始</h2><hr class="div_line"></div>
-			</div>
-			<div class="page" id="page4">
-				<div id="dat">
-					<div class="chart_layout" >
-						<div id="chart1"></div>
-						<div class="comment">男女比例</div>
-					</div>
-					<div class="chart_layout" >
-						<div id="chart2"></div>
-						<div class="comment">城市去向</div>
-					</div>
-					<script type="text/javascript">			
-		var dom = document.getElementById("chart1");
-		var dom1 = document.getElementById("chart2");
-		var myChart = echarts.init(dom);		
-		var myChart1 = echarts.init(dom1);
-		var app = {};				
-		app.title = '环形图'; 
-		var option1 = {			
-			tooltip: {			
-				trigger: 'item',	
-				formatter: "{a} <br/>{b}: {c} ({d}%)"		
-			},			
-			color:['hsla(0,0%,100%,0.24)','hsla(0,0%,100%,0.25)',,'hsla(0,0%,100%,0.26)','hsla(0,0%,100%,0.27)',,'hsla(0,0%,100%,0.28)','hsla(0,0%,100%,0.29)','hsla(0,0%,100%,0.30)','hsla(0,0%,100%,0.31)','hsla(0,0%,100%,0.32)','hsla(0,0%,100%,0.33)','hsla(0,0%,100%,0.34)','hsla(0,0%,100%,0.35)','hsla(0,0%,100%,0.36)','hsla(0,0%,100%,0.37)','hsla(0,0%,100%,0.38)','hsla(0,0%,100%,0.39)','hsla(0,0%,100%,0.40)','hsla(0,0%,100%,0.41)','hsla(0,0%,100%,0.42)','hsla(0,0%,100%,0.43)','hsla(0,0%,100%,0.44)'],	
-			series: [{		
-				name: '城市去向',			
-				type: 'pie',			
-				radius: ['30%', '80%'],			
-				avoidLabelOverlap: false,		
-				label: {					
-					normal: {				
-						show: false,		
-						position: 'center'		
-					},					
-					emphasis: {			
-						show: true,		
-						textStyle: {	
-							fontSize: '20',				
-							fontWeight: 'bold'			
-						}			
-					}				
-				},				
-				labelLine: {	
-					normal: {		
-						show: false	
-					}				
-				},				
-					data: [{		
-						value: 12,		
-						name: '北京'	
-					},					
-						  {		
-					value: 9,			
-						   name: '上海'		
-					   },
-							  {		
-					value: 14,			
-						   name: '郑州'		
-					   },
-							  {		
-					value: 7,			
-						   name: '武汉'		
-					   },
-							  {		
-					value: 6,			
-						   name: '南京'		
-					   },
-							  {		
-					value: 3,			
-						   name: '西安'		
-					   },
-							  {		
-					value: 2,			
-						   name: '香港'		
-					   },
-							  {		
-					value: 2,			
-						   name: '成都'		
-					   },
-							  {		
-					value: 2,			
-						   name: '重庆'		
-					   },
-							  {		
-					value: 2,			
-						   name: '广州'		
-					   },
-							  {		
-					value: 2,			
-						   name: '吉林'		
-					   },
-							  {		
-					value: 2,			
-						   name: '合肥'		
-					   },
-							  {		
-					value: 1,			
-						   name: '青岛'		
-					   },
-							  {		
-					value: 1,			
-						   name: '威海'		
-					   },
-							  {		
-					value: 1,			
-						   name: '厦门'		
-					   } ,
-							  {		
-					value: 1,			
-						   name: '福州'		
-					   },
-							  {		
-					value: 1,			
-						   name: '新加坡'		
-					   },
-							  {		
-					value: 1,			
-						   name: '兰州'		
-					   },
-							  {		
-					value: 1,			
-						   name: '哈尔滨'		
-					   },
-							  {		
-					value: 1,			
-						   name: '杭州'		
-					   },
-							  {		
-					value: 1,			
-						   name: '南昌'		
-					   }
-					  ]			
-			}]			
-		};
-		var option = {			
-			tooltip: {			
-				trigger: 'item',	
-				formatter: "{a} <br/>{b}: {c} ({d}%)"		
-			},			
-			color:['hsla(0,0%,100%,0.24)','hsla(0,0%,100%,0.44)'],	
-			series: [{		
-				name: '男女比例',			
-				type: 'pie',			
-				radius: ['30%', '80%'],			
-				avoidLabelOverlap: false,		
-				label: {					
-					normal: {				
-						show: false,		
-						position: 'center'		
-					},					
-					emphasis: {			
-						show: true,		
-						textStyle: {	
-							fontSize: '20',				
-							fontWeight: 'bold'			
-						}			
-					}				
-				},				
-				labelLine: {	
-					normal: {		
-						show: false	
-					}				
-				},				
-				data: [{		
-					value: 34,		
-					name: '女'	
-				},					
-					   {		
-					value: 38,			
-						   name: '男'		
-					   }					
-					  ]			
-			}]			
-		};	
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+          $('.menu').singlePageNav();
+        }
+      });
+    });
 
-		if(option && typeof option === "object") {		
-			myChart.setOption(option, true);	
-			myChart1.setOption(option1,true);
-		}		
-		</script>
-				</div>
-			</div>
-			<div class="page" id="page5">
-				<div class="flag"><h2>这又是一个开始</h2>
-					<hr class="div_line"></div>
-				<div id="img_wall">
-			</div>
-			</div>
-		</div>
-	</section>
-	<footer id="footer">
-		<div>
-		</div>
-	</footer>
+    $('#go-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, 1000);
+      return false;
+    });
+
+  </script>
 </body>
 </html>
